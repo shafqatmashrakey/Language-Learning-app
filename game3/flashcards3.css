@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.flashcard {
+    width: 300px;
+    height: 200px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    overflow: hidden;
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.flashcard.visible {
+    display: block;
+}
+
+.flashcard-layout {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.flashcard.flip .flashcard-layout {
+    transform: rotateY(180deg);
+}
+
+.flashcard-front, .flashcard-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    backface-visibility: hidden;
+}
+
+.flashcard-front {
+    background-color: #ffcccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard-back {
+    background-color: #ccccff;
+    transform: rotateY(180deg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flashcard-back h2 {
+    /*margin-bottom: 10px;*/
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.flashcard-back p {
+    margin: 5px 0;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.level-buttons {
+    display: flex;
+    margin-bottom: 20px;
+    margin-top: 120px;
+    justify-content: center;
+}
+
+.level-buttons button {
+    margin-right: 10px;
+    width: 150px;
+}
+
+.level-buttons button, .navigation-buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+}
+
+.level-buttons button:hover, .navigation-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.navigation-buttons button {
+    margin-right: 10px;
+
+    width: 100px;
+}
+
+.navigation-buttons button:last-child {
+    margin-right: 0;
+}
+
+.flashcards-container {
+    display: flex;
+}
+
+.navigation-buttons {
+    margin-top: 20px;
+}
+
+.flashcard-title {
+    font-weight: bold;
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 80px;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-top: 1px solid gray;
+    margin-bottom: 100px;
+}

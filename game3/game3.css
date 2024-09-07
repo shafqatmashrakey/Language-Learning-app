@@ -1,0 +1,188 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #f0f0f0;
+}
+
+.box {
+    margin: 25px auto;
+    max-width: 300px;
+}
+
+input[type="text"] {
+    margin-top: 15px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+#message {
+    font-weight: 500;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+h1#enterWord {
+    white-space: nowrap;
+    text-align: center;
+    margin-top: 180px;
+    margin-bottom: 20px;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+#enterWord {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.buttonFind, .buttonCreate {
+    width: 100%;
+    flex: none;
+}
+
+.col {
+    display: inline-block;
+    width: 50%;
+}
+
+.buttonFind,
+.buttonCreate,
+.buttonIntro,
+.startBtn,
+.btnSave,
+.btnHighscore {
+    background-color: #98FB98;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+.buttonFind:hover,
+.buttonCreate:hover,
+.buttonIntro:hover,
+.startBtn:hover,
+.btnSave:hover,
+.btnHighscore:hover {
+    background-color:limegreen;
+}
+
+#beginnerBtn,
+#intermediateBtn,
+#advancedBtn {
+    background-color: gold;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+#beginnerBtn:hover,
+#intermediateBtn:hover,
+#advancedBtn:hover {
+    background-color:goldenrod;
+}
+
+.btnSave,
+.btnHighscore,
+.btnGame,
+.btnHome {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #98FB98;
+    font-size: 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+.btnGame,
+.btnHome {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#word {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.scorebox {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    padding-right: 40px;
+    margin-top: 70px;
+}
+
+#score-title {
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 30px;
+}
+
+#score {
+    margin-top: 15px;
+}
+
+.score-container {
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.startBtn {
+    display: block;
+    text-decoration: none;
+
+}
+
+#start {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.game-mode {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 160px;
+}
+
+.guessInput {
+    font-size: 16px;
+}
+
+#message {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+#username {
+    font-size: 16px;
+}
+
+#scoreTitle {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+#finalScore {
+    font-weight: bold;;
+}
