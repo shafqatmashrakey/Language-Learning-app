@@ -20,9 +20,9 @@ Requirements
 
 2. Set Up Local Server: 
 
-   - Ensure you have a web server installed on your machine (e.g., Apache or Nginx). 
+   - Ensure you have a web server installed on your machine (e.g., Apache or Nginx, Wamp server). 
 
-   - Place the downloaded code in the root directory of your local server (e.g., htdocs for Apache).    
+   - Place the downloaded code in the root directory of your local server (e.g., htdocs for Apache, www for Wamp server).    
 
 3. Install PHP Dependencies: 
 
